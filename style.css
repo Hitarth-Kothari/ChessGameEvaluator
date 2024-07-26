@@ -17,16 +17,13 @@ div * {
   max-width: 504px;
   max-height: 728px;
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
-  margin: 20px auto;
 }
 
 .cellprefix {
-  width: 100%;
-  height: 100%;
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
   float: left;
   margin: 3px;
   padding: 15px 0 0 20px;
@@ -34,10 +31,8 @@ div * {
 
 .gamecell {
   border: 1px solid #000;
-  width: 100%;
-  height: 100%;
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
   float: left;
   margin: 3px;
   transition: all 0.5s ease-in-out;

@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Javascript Chess Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<div id="game">
+<body class="flex justify-center items-center min-h-screen">
+<div id="container" class="flex flex-col items-center">
+  <div id="game" class="mr-4">
     <div class='cellprefix'>8</div>
     <div class='gamecell' id='1_8'></div>
     <div class='gamecell grey' id='2_8'></div>
@@ -94,10 +96,10 @@
     <div class='gamecell' id='piece_3'></div>
     <div class='gamecell grey' id='piece_4'></div>
     <div class='gamecell' id='piece_5'></div>
-    <div class='gamecell grey' id='piece_6'></div><br>
+    <div class='gamecell grey' id='piece_6'></div>
+    <div class='gamecell' style="visibility: hidden;"></div>
     <div class='gamecell' style="visibility: hidden;"></div><br>
-    <div class='gamecell grey' style="visibility: hidden;"></div>
-    <div class='cellprefix' style="visibility: hidden;">10</div>
+    <div class='cellprefix' style="visibility: hidden;"></div>
     <div class='gamecell grey' id='piece_7'></div>
     <div class='gamecell' id='piece_8'></div>
     <div class='gamecell grey' id='piece_9'></div>
@@ -105,7 +107,11 @@
     <div class='gamecell grey' id='piece_11'></div>
     <div class='gamecell' id='piece_12'></div>
     <div class='gamecell grey' id='piece_13'></div>
-    <div class='gamecell' style="visibility: hidden;"></div>
+    <div class='gamecell' style="visibility: hidden;"></div><br>
+  </div>
+  <div id="controls" class="flex flex-col items-center justify-center">
+    <button id="calculateButton" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Calculate Best Move</button>
+  </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./script.js"></script>
